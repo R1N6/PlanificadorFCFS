@@ -8,12 +8,12 @@ namespace PlanificadorFCFS.Classes
 {
     internal class Proceso
     {
-        int tiempoEjecucion = 0;
-        int tiempoRestante  = 0;
+        int tiempoEjecucion { get; set; }
+        int tiempoTranscurrido {get; set; }
         public Proceso (int t) 
         {
             this.tiempoEjecucion = t;
-            this.tiempoRestante = tiempoEjecucion;
+            this.tiempoTranscurrido = tiempoEjecucion;
         }
     }
 }
